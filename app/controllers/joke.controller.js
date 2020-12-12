@@ -122,7 +122,7 @@ exports.random = (req, res) => {
 
   Joke.find()
     .then((jokes) => {
-      if (jokes?.length > 0) {
+      if (jokes.length > 0) {
         const randomIndex = randomInteger(0, jokes.length - 1);
         res.send(jokes[randomIndex]);
       }
@@ -141,7 +141,7 @@ exports.category = (req, res) => {
 
   Joke.find()
     .then((jokes) => {
-      if (jokes?.length > 0) {
+      if (jokes.length > 0) {
         if (req.query.category) {
           const newArray = jokes.filter((joke) =>
             joke.category?.includes(req.query.category)
