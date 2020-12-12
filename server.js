@@ -30,6 +30,6 @@ app.get("/", (req, res) => {
 
 require("./app/routes/joke.routes.js")(app);
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log("Server is listening on port 3000");
 });
