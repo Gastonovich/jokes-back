@@ -144,7 +144,7 @@ exports.category = (req, res) => {
       if (jokes.length > 0) {
         if (req.query.category) {
           const newArray = jokes.filter((joke) =>
-            joke.category?.includes(req.query.category)
+            joke.category.includes(req.query.category)
           );
           const randomIndex = randomInteger(0, newArray.length - 1);
           res.send(newArray[randomIndex]);
