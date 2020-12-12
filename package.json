@@ -1,7 +1,6 @@
 {
-  "name": "node-easy-notes-app",
+  "name": "jokes-back",
   "version": "1.0.0",
-  "description": "Never miss a thing in Life. Take notes quickly. Organize and keep track of all your notes.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,8 +12,7 @@
     "Mongoose",
     "Notes"
   ],
-  "author": "callicoder",
-  "license": "MIT",
+  "author": "gastonovich",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
