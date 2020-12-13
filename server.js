@@ -9,7 +9,10 @@ const dbConfig = require("./config/database.config.js");
 const mongoose = require("mongoose");
 app.use(function (req, res, next) {
   // Website you wish to allow to connect
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:8888");
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://jokes-search.herokuapp.com"
+  );
 
   // Request methods you wish to allow
   res.setHeader(
